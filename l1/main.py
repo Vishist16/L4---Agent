@@ -1,8 +1,10 @@
 from dotenv import load_dotenv
-import os
+
+from langchain_core.prompts import PromptTemplate
+from langchain_openai import ChatOpenAI
 
 load_dotenv()
-
+# updated
 def main():
     print("Hello from l1!")
     print(os.environ.get("NVIDIA_API_KEY"))
